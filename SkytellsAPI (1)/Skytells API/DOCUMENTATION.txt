@@ -1,0 +1,57 @@
+###################################################################
+# Skytells API v1.0
+###################################################################
+#===> HOW TO USE IT
+########################## Installation ###########################
+
+In order to add Skytells API to your project, Just follow those steps :
+From Menu bar, choose [ Project ] > [ Add Reference ] And then click Brows
+in order to load [ Skytells.dll ] into your project
+Once you load the DLL file, just add its name space 
+
+########################## Namespace ##############################
+
+using Skytells;
+
+
+####################### Inputs And Outputs ########################
+- Translate = Bool(3Arg[])
+------------------Litter, Language of the Litter, Output Language
+
+- TranslatedWord = String
+-- Showing the translated word
+
+
+####################### Console Code ###############################
+
+Skytells.Translator.TranslateText(Litter, InputLanguage, OutputLanguage)
+
+
+####################### Example - Simple Code ######################
+
+if (Skytells.Translator.TranslateText("Hello!", "EN", "FR") == true)
+MessageBox.Show(Skytells.TranslatedWord);
+
+
+####################### Full Example ##############################
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using Skytells;
+
+namespace Skytells
+{
+    class Translate
+    {
+
+		if (Skytells.Translator.TranslateText("Hello!", "EN", "FR") == true)
+		{
+		MessageBox.Show(Skytells.TranslatedWord);
+		}else{
+		MessageBox.Show("Error");
+		}
+	}
+}
