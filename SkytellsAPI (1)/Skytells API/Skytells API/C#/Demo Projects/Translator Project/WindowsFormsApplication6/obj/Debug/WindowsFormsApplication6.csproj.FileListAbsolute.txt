@@ -1,0 +1,17 @@
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb
+c:\users\hppc\documents\visual studio 2013\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\Skytells.dll
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.pdb
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.exe
+C:\Users\USER\Documents\AT\AutoTranslator\SkytellsAPI (1)\Skytells API\Skytells API\C#\Demo Projects\Translator Project\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.pdb

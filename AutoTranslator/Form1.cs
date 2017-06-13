@@ -13,41 +13,51 @@ namespace AutoTranslator
 {
     public partial class Form1 : Form
     {
+        int start_tran = 0;
+        string is_change = null;
+        string to_tran = null;
+        string has_tran = null;
         public Form1()
         {
             InitializeComponent();
+            
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if(start_tran == 0)
+            {
+                start_tran = 1;
+                timer1.Enabled = true;
+            }
+            else
+            {
+                start_tran = 0;
+                timer1.Enabled = false;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
             // Declares an IDataObject to hold the data returned from the clipboard.
             // Retrieves the data from the clipboard.
             IDataObject iData = Clipboard.GetDataObject();
-            string is_change = null;
-            string to_tran = null;
-            string has_tran = null;
             // Determines whether the data is in a format you can use.
-            while (true)
+            if (iData.GetDataPresent(DataFormats.Text))
             {
-                if (iData.GetDataPresent(DataFormats.Text))
+                to_tran = (String)iData.GetData(DataFormats.Text);
+                if (is_change != to_tran)
                 {
-                    if(is_change != (String)iData.GetData(DataFormats.Text)){
-                        to_tran = (String)iData.GetData(DataFormats.Text);
-                        if(Skytells.Translator.TranslateText(to_tran,textBox1.Text,textBox2.Text) == true)
-                        {
-                            has_tran = Skytells.Translator.TranslatedWord;
-                        }
-                        MessageBox.Show(has_tran);
+                    is_change = to_tran;
+                    if (Skytells.Translator.TranslateText(to_tran, textBox1.Text, textBox2.Text) == true)
+                    {
+                                has_tran = Skytells.Translator.TranslatedWord;
                     }
+                            MessageBox.Show(has_tran);
                 }
-                else
-                {
-                    // No it is not.
-                    textBox2.Text = "Could not retrieve data off the clipboard.";
-                }
-                is_change = (String)iData.GetData(DataFormats.Text);
             }
+                        
         }
     }
 }

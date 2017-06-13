@@ -8,3 +8,13 @@ c:\users\user\documents\visual studio 2017\Projects\AutoTranslator\AutoTranslato
 c:\users\user\documents\visual studio 2017\Projects\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.exe
 c:\users\user\documents\visual studio 2017\Projects\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.pdb
 C:\Users\USER\Documents\Visual Studio 2017\Projects\AutoTranslator\AutoTranslator\bin\Debug\Skytells.dll
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\bin\Debug\AutoTranslator.exe.config
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\bin\Debug\AutoTranslator.exe
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\bin\Debug\AutoTranslator.pdb
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\bin\Debug\Skytells.dll
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.Form1.resources
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.Properties.Resources.resources
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.exe
+C:\Users\USER\Documents\AT\AutoTranslator\AutoTranslator\obj\Debug\AutoTranslator.pdb
