@@ -20,7 +20,23 @@ namespace AutoTranslator
         public Form1()
         {
             InitializeComponent();
-            
+            comboBox1.Items.Add("英文");
+            comboBox1.Items.Add("正體中文");
+            comboBox1.Items.Add("法文");
+            comboBox1.Items.Add("德文");
+            comboBox1.Items.Add("阿拉伯文");
+            comboBox1.Items.Add("西班牙文");
+            comboBox1.Items.Add("葡萄牙文");
+            comboBox1.SelectedItem = "英文"; ;
+            comboBox2.Items.Add("英文");
+            comboBox2.Items.Add("正體中文");
+            comboBox2.Items.Add("法文");
+            comboBox2.Items.Add("德文");
+            comboBox2.Items.Add("阿拉伯文");
+            comboBox2.Items.Add("西班牙文");
+            comboBox2.Items.Add("葡萄牙文");
+            comboBox2.SelectedItem = "正體中文";
+
         }
 
 
@@ -58,6 +74,89 @@ namespace AutoTranslator
                 }
             }
                         
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.SelectedItem == "英文")
+            {
+                textBox1.Text = "EN";
+            }
+            else if (comboBox1.SelectedItem == "正體中文")
+            {
+                textBox1.Text = "zh-HK";
+            }
+            else if (comboBox1.SelectedItem == "簡體中文")
+            {
+                textBox1.Text = "zh_CN";
+            }
+
+            else if (comboBox1.SelectedItem == "法文")
+            {
+                textBox1.Text = "FR";
+            }
+
+            else if (comboBox1.SelectedItem == "德文")
+            {
+                textBox1.Text = "DE";
+            }
+
+            else if (comboBox1.SelectedItem == "阿拉伯文")
+            {
+                textBox1.Text = "AR";
+            }
+
+            else if (comboBox1.SelectedItem == "西班牙文")
+            {
+                textBox1.Text = "ES";
+            }
+            else if (comboBox1.SelectedItem == "葡萄牙文")
+            {
+                textBox1.Text = "PT";
+            }
+
+
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedItem == "英文")
+            {
+                textBox2.Text = "EN";
+            }
+            else if (comboBox2.SelectedItem == "正體中文")
+            {
+                textBox2.Text = "zh-HK";
+            }
+            else if (comboBox2.SelectedItem == "簡體中文")
+            {
+                textBox2.Text = "zh_CN";
+            }
+
+            else if (comboBox2.SelectedItem == "法文")
+            {
+                textBox2.Text = "FR";
+            }
+
+            else if (comboBox2.SelectedItem == "德文")
+            {
+                textBox2.Text = "DE";
+            }
+
+            else if (comboBox2.SelectedItem == "阿拉伯文")
+            {
+                textBox2.Text = "AR";
+            }
+
+            else if (comboBox2.SelectedItem == "西班牙文")
+            {
+                textBox2.Text = "ES";
+            }
+            else if (comboBox2.SelectedItem == "葡萄牙文")
+            {
+                textBox2.Text = "PT";
+            }
         }
     }
 }
