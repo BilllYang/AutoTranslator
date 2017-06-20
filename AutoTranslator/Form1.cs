@@ -17,6 +17,15 @@ namespace AutoTranslator
         string is_change = null;
         string to_tran = null;
         string has_tran = null;
+        string historyh = null;//to tran
+        string historyt = null;//has tran
+        string strtarget = null;
+        string searchWithinThis = null;
+        int found = 0;
+        int totFinds = 0;
+        int linenumber = 0;
+        string change = null;
+        int[] lineaddress = new int[50];
         public Form1()
         {
             InitializeComponent();
@@ -71,6 +80,16 @@ namespace AutoTranslator
                                 has_tran = Skytells.Translator.TranslatedWord;
                     }
                             MessageBox.Show(has_tran);
+                            historyt = to_tran;
+                            historyh = has_tran;
+                            linenumber++;
+                            change = Convert.ToString(linenumber);
+                            textBox3.AppendText(change+".  ");
+                            textBox5.AppendText(change+".  ");
+                            textBox3.AppendText(historyt);
+                            textBox3.AppendText("\n");
+                            textBox5.AppendText(historyh);
+                            textBox5.AppendText("\n");
                 }
             }
                         
@@ -156,6 +175,70 @@ namespace AutoTranslator
             else if (comboBox2.SelectedItem == "葡萄牙文")
             {
                 textBox2.Text = "PT";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            strtarget = textBox4.Text;
+            searchWithinThis = textBox3.Text;
+            int firstCharacter = searchWithinThis.IndexOf(strtarget);
+
+            for (int k = 1; k <= linenumber+1; k++)
+            {
+                lineaddress[k - 1] = searchWithinThis.IndexOf(Convert.ToString(k));
+            }
+            if (firstCharacter >= 0)
+            {
+                for (int k = 1; k <= linenumber+1; k++)
+                {
+                    if (firstCharacter <= lineaddress[k - 1])
+                    {
+                        MessageBox.Show("first character find in" + (k-1) + "line");
+                        break;
+                    }
+                    else if(lineaddress[k - 1] > lineaddress[k])
+                    {
+                        MessageBox.Show("first character find in" + k + "line");
+                        break;
+                    }
+                }
+                // MessageBox.Show("first character find in" + firstCharacter+"position");//輸出尋找單字的第一個字元的位子
+            }
+            else
+            {
+                MessageBox.Show("not found");//找不到
+            }
+        }
+
+
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox2.Checked == false)
+            {
+                textBox3.Visible = false;
+            }
+            else
+            {
+                textBox3.Visible = true;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == false)
+            {
+                textBox5.Visible = false;
+            }
+            else
+            {
+                textBox5.Visible = true;
             }
         }
     }
